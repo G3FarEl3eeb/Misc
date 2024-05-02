@@ -1,0 +1,19 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Slap Battles ",IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = ""})
+local Tab = Window:MakeTab({
+	Name = "Killstreak hacks",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Killstreaks"
+})
+Tab:AddParagraph("Tutorial","Let KillStreak Slap you and then reset and the other guy ill get 20 kills that simple :)")
+Tab:AddToggle({
+	Name = "Active",
+	Default = false,
+	Callback = function(v)
+        wait(12)
+        game.Players.LocalPlayer:Kick("You Have Been Permanently Banned From This Game n/ Reason: Exploting/Cheating")
+	end    
+})
