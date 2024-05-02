@@ -1,12 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Slap Battles KillStreak Menu", HidePremium = false, SaveConfig = true, ConfigFolder = ""})
+local Window = OrionLib:MakeWindow({Name = "Slap Battles ",IntroEnabled = false, HidePremium = false, SaveConfig = true, ConfigFolder = ""})
 local Tab = Window:MakeTab({
 	Name = "Killstreak hacks",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "Hacks"
+	Name = "Killstreaks"
 })
 Tab:AddParagraph("Tutorial","Let KillStreak Slap you and then reset and the other guy ill get 20 kills that simple :)")
 Tab:AddToggle({
